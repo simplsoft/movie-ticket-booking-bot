@@ -10,8 +10,8 @@ server.listen(process.env.port || process.env.PORT || 3978, () => {
 
 // Create new ChatConnector object
 const connector = new builder.ChatConnector({
-  appId: process.env.AZURE_APP_ID,
-  appPassword: process.env.AZURE_APP_PASSWORD
+  appId: '65e3b714-a06c-483b-b95d-28009b48f7ae',
+  appPassword: '|d3nL|/!B4)R@VbV'
 });
 
 // Connect Restify and ChatConnector
