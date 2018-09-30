@@ -24,7 +24,7 @@ const luisAPIHostName = "westus.api.cognitive.microsoft.com";
 const luisAppId       = "27772d41-18cb-4ec4-a7a6-23107cfef680";
 const luisAPIKey      = "0b62e6038ff14261b97c6618b8b8ee12";
 
-const luisUrlModel = `https://${luisAPIHostName}/luis/v2.0/apps/${luisAppId}?subscription-key=${luisAPIKey}`;
+const luisUrlModel = `https://${luisAPIHostName}/luis/v2.0/apps/${luisAppId}?subscription-key=${luisAPIKey}&timezoneOffset=-360&q=`;
 
 const recognizer = new builder.LuisRecognizer(luisUrlModel);
 const intents = new builder.IntentDialog({
