@@ -10,8 +10,8 @@ server.listen(process.env.port || process.env.PORT || 3978, () => {
 
 // Create new ChatConnector object
 const connector = new builder.ChatConnector({
-  appId: '65e3b714-a06c-483b-b95d-28009b48f7ae',
-  appPassword: '|d3nL|/!B4)R@VbV'
+  appId: "eed50719-f9ad-496d-8d37-ac4f35189e14",
+  appPassword: "DBiFIlTlg@|kwo9R"
 });
 
 // Connect Restify and ChatConnector
@@ -21,8 +21,8 @@ const bot = new builder.UniversalBot(connector);
 
 // LUIS Credentials
 const luisAPIHostName = "westus.api.cognitive.microsoft.com";
-const luisAppId       = '27772d41-18cb-4ec4-a7a6-23107cfef680';
-const luisAPIKey      = '0b62e6038ff14261b97c6618b8b8ee12';
+const luisAppId       = "27772d41-18cb-4ec4-a7a6-23107cfef680";
+const luisAPIKey      = "0b62e6038ff14261b97c6618b8b8ee12";
 
 const luisUrlModel = `https://${luisAPIHostName}/luis/v2.0/apps/${luisAppId}?subscription-key=${luisAPIKey}`;
 
